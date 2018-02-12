@@ -1,0 +1,22 @@
+package: github.com/sanjid133/pod-controller
+import:
+- package: github.com/appscode/go
+  subpackages:
+  - log/golog
+  - term
+- package: github.com/spf13/cobra
+- package: k8s.io/api
+  subpackages:
+  - core/v1
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/apis/meta/v1
+  - pkg/fields
+  - pkg/util/runtime
+  - pkg/util/wait
+- package: k8s.io/client-go
+  subpackages:
+  - kubernetes
+  - tools/cache
+  - tools/clientcmd
+  - util/workqueue
